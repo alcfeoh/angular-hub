@@ -4,6 +4,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { filter, switchMap } from 'rxjs';
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 import { PwaService } from './services/pwa.service';
+import { SupabaseService } from './services/supabase.service';
 
 @Component({
   selector: 'angular-hub-root',
@@ -22,8 +23,10 @@ export class AppComponent {
   readonly #router = inject(Router);
   readonly #swUpdate = inject(SwUpdate);
   readonly #pwaService = inject(PwaService);
+  readonly #supabaseService = inject(SupabaseService);
 
   constructor() {
+    this.#supabaseService.init();
     afterNextRender(() => {
       this.#pwaService.initPwaPrompt();
       this.#router.events

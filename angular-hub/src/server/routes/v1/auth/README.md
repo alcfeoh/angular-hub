@@ -1,0 +1,4 @@
+- https://supabase.nuxtjs.org/demo
+- https://github.com/supabase/auth-helpers/tree/main
+- https://github.com/vercel/next.js/blob/canary/examples/with-supabase/utils/supabase/server.ts
+- https://github.com/angular/angular/issues/15730

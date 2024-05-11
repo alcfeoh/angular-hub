@@ -24,6 +24,8 @@
     "@angular/router": "17.3.7",
     "@angular/service-worker": "17.3.7",
     "@rx-angular/template": "^17.0.0",
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.43.1",
     "date-fns": "^2.30.0",
     "front-matter": "^4.0.2",
     "marked": "^5.0.2",
